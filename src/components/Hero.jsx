@@ -9,7 +9,7 @@ export default function Hero() {
         <p className="text-sm md:text-base font-light">“When you think that you are <span>done</span>, 
             you’re <span className="text-blue-400 font-medium">only 40%</span> into what your body’s
             <span className="text-blue-400 font-medium"> capable</span> of doing. That’s just the <span className="text-blue-400 font-medium"> limits </span> 
-            that we put on ourselves.” <span className="text-blue-400 font-medium">David Goggins</span></p>
+            that we put on ourselves.” <span className="font-semibold text-white-400 font-medium">David Goggins</span></p>
         <button className="px-8 py-4 rounded border-[2px] bg-slate 
         border-blue-400 border-solid blueShadow duration-200">
             <p>JOIN NOW</p>
