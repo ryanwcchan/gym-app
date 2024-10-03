@@ -12,7 +12,7 @@ export default function Hero() {
             that we put on ourselves.” <span className="font-semibold text-white-400 font-medium">David Goggins</span></p>
         <button className="px-8 py-4 rounded border-[2px] bg-slate 
         border-blue-400 border-solid blueShadow duration-200">
-            <p>JOIN NOW</p>
+            <p>START</p>
         </button>
     </div>
   )
