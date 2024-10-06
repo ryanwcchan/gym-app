@@ -1,6 +1,7 @@
 import { useState } from "react"
 import { SCHEMES, WORKOUTS } from "../utils/workouts"
 import SectionWrapper from "./SectionWrapper"
+import Button from "./Button"
 
 function Header({ index, title, description }) {
     return (
@@ -14,11 +15,8 @@ function Header({ index, title, description }) {
     )
 }
 
-export default function Generator() {
+export default function Generator({ workoutType, setWorkoutType, muscleGroup, setMuscleGroup, goals, setGoals, updateWorkout }) {
   const [showModal, setShowModal] = useState(false)
-  const [workoutType, setWorkoutType] = useState('individual')
-  const [muscleGroup, setMuscleGroup] = useState([])
-  const [goals, setGoals] = useState('strength_power')
 
   function toggleModal() {
     setShowModal(!showModal)
@@ -43,6 +41,11 @@ export default function Generator() {
     setMuscleGroup([...muscleGroup, muscle])
   }
 
+  function changeWorkout(type) {
+    setWorkoutType(type)
+    setMuscleGroup([])
+  }
+
   return (
     <SectionWrapper
         header={"generate your workout"}
@@ -57,7 +60,7 @@ export default function Generator() {
             {Object.keys(WORKOUTS).map((type, index) => {
                 return (
                     <button
-                        onClick={() => setWorkoutType(type)}
+                        onClick={() => changeWorkout(type)}
                         key={index} 
                         className={"bg-slate-950 border-2 duration-200 hover:border-red-600 py-3 rounded-lg "
                         + (type === workoutType ? 'border-blue-600' : '')
@@ -76,7 +79,7 @@ export default function Generator() {
         <div className="bg-slate-950 py-3 border border-solid 
         border-blue-400 rounded-lg flex flex-col">
             <button onClick={toggleModal} className="relative flex items-center justify-center">
-                <p>Select muscle groups</p>
+                <p className="font-bold text-blue-400">Select muscle groups</p>
                 <i className="fa-solid fa-caret-down absolute right-3 top-1/2 -translate-y-1/2"></i>
             </button>
             {showModal && (
@@ -118,6 +121,7 @@ export default function Generator() {
                 )
             })}
         </div>
+        <Button text="Begin"></Button>
     </SectionWrapper>
   )
 }
