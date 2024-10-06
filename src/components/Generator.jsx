@@ -24,6 +24,25 @@ export default function Generator() {
     setShowModal(!showModal)
   }
 
+  function updateMuscles(muscle) {
+    if (muscleGroup.includes(muscle)) {
+        setMuscleGroup(muscleGroup.filter(m => m !== muscle))
+        return
+    }
+
+    if (muscleGroup.length > 2) {
+        return
+    }
+
+    if (workoutType !== 'individual') {
+        setMuscleGroup([muscle])
+        // setShowModal(false)
+        return
+    }
+
+    setMuscleGroup([...muscleGroup, muscle])
+  }
+
   return (
     <SectionWrapper
         header={"generate your workout"}
@@ -32,14 +51,17 @@ export default function Generator() {
         <Header
             index={'01'}
             title={'Push yourself'}
-            description={'Choose your workout split'}
+            description={'Choose your workout type'}
         />
         <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
             {Object.keys(WORKOUTS).map((type, index) => {
                 return (
-                    <button 
+                    <button
+                        onClick={() => setWorkoutType(type)}
                         key={index} 
-                        className="bg-slate-950 border border-blue-400 py-3 rounded-lg"
+                        className={"bg-slate-950 border-2 duration-200 hover:border-red-600 py-3 rounded-lg "
+                        + (type === workoutType ? 'border-blue-600' : '')
+                        }
                     >
                         <p className="capitalize">{type.replaceAll('_', " ")}</p>
                     </button>
@@ -58,20 +80,38 @@ export default function Generator() {
                 <i className="fa-solid fa-caret-down absolute right-3 top-1/2 -translate-y-1/2"></i>
             </button>
             {showModal && (
-                <div>modal</div>
+                <div className="flex flex-col px-3 gap-2 pt-2">
+                    {(workoutType === "individual" ? WORKOUTS
+                    [workoutType] : Object.keys(WORKOUTS[workoutType])).map((muscle, 
+                    muscleIndex) => {
+                        return (
+                            <button
+                                key={muscleIndex}
+                                className={"hover:text-red-600 duration-200 " + (muscleGroup.
+                                includes(muscle) ? 'text-blue-600 bg-gray-200 rounded-lg' : '')}
+                                onClick={() => updateMuscles(muscle)}
+                            >
+                                <p className="capitalize">{muscle}</p>
+                            </button>
+                        )
+                    })}
+                </div>
             )}
         </div>
         <Header
             index={'03'}
             title={'Identify your goal'}
-            description={'Select your pefered workout type'}
+            description={'Select your objective'}
         />
         <div className="grid grid-cols-3 gap-4">
             {Object.keys(SCHEMES).map((scheme, schemeIndex) => {
                 return (
-                    <button 
+                    <button
+                        onClick={() => setGoals(scheme)}
                         key={schemeIndex} 
-                        className="bg-slate-950 border border-blue-400 py-3 rounded-lg"
+                        className={"bg-slate-950 border-2 duration-200 hover:border-red-600 py-3 rounded-lg "
+                        + (goals === scheme ? 'border-blue-600' : "")
+                        }
                     >
                         <p className="capitalize">{scheme.replaceAll('_', " ")}</p>
                     </button>
