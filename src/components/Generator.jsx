@@ -28,13 +28,17 @@ export default function Generator({ workoutType, setWorkoutType, muscleGroup, se
         return
     }
 
-    if (muscleGroup.length > 2) {
+    if (muscleGroup.length >= 3 && workoutType === 'individual') {
+        console.log("Selected Muscle Groups:", muscleGroup);
+        console.log("Selected Workout Type:", workoutType);
         return
     }
 
     if (workoutType !== 'individual') {
         setMuscleGroup([muscle])
         // setShowModal(false)
+        console.log("Selected Muscle Groups:", muscleGroup);
+        console.log("Selected Workout Type:", workoutType);
         return
     }
 
@@ -62,7 +66,7 @@ export default function Generator({ workoutType, setWorkoutType, muscleGroup, se
                     <button
                         onClick={() => changeWorkout(type)}
                         key={index} 
-                        className={"bg-slate-950 border-2 duration-200 hover:border-red-600 py-3 rounded-lg "
+                        className={"bg-slate-950 px-4 border-2 duration-200 hover:border-red-600 py-3 rounded-lg "
                         + (type === workoutType ? 'border-blue-600' : '')
                         }
                     >
@@ -106,13 +110,15 @@ export default function Generator({ workoutType, setWorkoutType, muscleGroup, se
             title={'Identify your goal'}
             description={'Select your objective'}
         />
-        <div className="grid grid-cols-3 gap-4">
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
             {Object.keys(SCHEMES).map((scheme, schemeIndex) => {
                 return (
                     <button
-                        onClick={() => setGoals(scheme)}
+                        onClick={() => {
+                            setGoals(scheme)
+                        }}
                         key={schemeIndex} 
-                        className={"bg-slate-950 border-2 duration-200 hover:border-red-600 py-3 rounded-lg "
+                        className={"bg-slate-950 px-4 border-2 duration-200 hover:border-red-600 py-3 rounded-lg "
                         + (goals === scheme ? 'border-blue-600' : "")
                         }
                     >
@@ -121,7 +127,7 @@ export default function Generator({ workoutType, setWorkoutType, muscleGroup, se
                 )
             })}
         </div>
-        <Button text="Begin"></Button>
+        <Button text="Begin" func={updateWorkout} ></Button>
     </SectionWrapper>
   )
 }

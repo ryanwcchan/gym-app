@@ -14,7 +14,8 @@ function App() {
     if (muscleGroup.length < 1) {
       return
     }
-    let newWorkout = generateWorkout(workoutType, muscleGroup, goals)
+    let newWorkout = generateWorkout({ workoutType, muscleGroup, goals })
+    console.log("New Workout:" + newWorkout)
     setWorkout(newWorkout)
   }
 
