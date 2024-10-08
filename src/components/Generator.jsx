@@ -128,7 +128,7 @@ export default function Generator({ workoutType, setWorkoutType, muscleGroup, se
                 )
             })}
         </div>
-        <Button text="Begin" func={updateWorkout} ></Button>
+        <Button text="Generate" func={updateWorkout} ></Button>
     </SectionWrapper>
   )
 }

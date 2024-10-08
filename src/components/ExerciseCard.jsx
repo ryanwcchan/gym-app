@@ -1,7 +1,11 @@
-import { useState } from "react"
+import { useState, useEffect } from "react"
 
 export default function ExerciseCard({ exercise, index }) {
   const [setsCompleted, setSetsCompleted] = useState(0)
+
+  useEffect(() => {
+    setSetsCompleted(0)
+  }, [exercise])
 
   function handleIncrement() {
     setSetsCompleted((setsCompleted + 1) % 6)

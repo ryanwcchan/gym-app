@@ -5,8 +5,8 @@ export default function Workout({ workout }) {
   return (
     <SectionWrapper
         id={'workout'}
-        header={"Welcome to"}
-        title={['The', 'DANGER', 'zone']}
+        header={"Workouts created"}
+        title={['New', 'WORKOUTS', 'Below']}
     >
       <div className="flex flex-col gap-4">
         {workout.map((exercise, index) => {
