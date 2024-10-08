@@ -1188,7 +1188,7 @@ export const EXERCISES = {
         },
         unit: 'reps', //vs duration    
         muscles: ['glutes'],
-        description: 'You\'re a donkey, on your four limbs. Your owner is particularly annoying, standing directly behind you. With one leg, kick backwards and up as much as you can to teach them a lesson.',
+        description: 'Begin on all fours, with your hands directly under your shoulders and your knees under your hips. Keep your core engaged and back flat throughout the movement. Lift one leg, keeping the knee bent at a 90-degree angle, and kick your heel toward the ceiling. Squeeze your glutes at the top of the movement. Lower your leg back to the starting position without letting your knee touch the ground.',
         substitutes: ['cable kickbacks']
     },
     good_girls: {
@@ -1200,7 +1200,7 @@ export const EXERCISES = {
         },
         unit: 'reps', //vs duration    
         muscles: ['glutes'],
-        description: 'On the good girls machine we learn to keep our legs closed. Seated, you want to bring your knees together.',
+        description: 'Sit on the good girls (hip abduction) machine with your back pressed firmly against the seat pad. Place your feet on the designated foot rests, and position your knees against the thigh pads. Adjust the machine’s resistance to a comfortable but challenging level. Grip the handles or rest your hands on your thighs. Ensure your core is engaged, and your spine is neutral. Slowly press your knees outward against the resistance, focusing on using your outer thighs and glutes to drive the movement. Pause briefly at the peak contraction. In a controlled manner, bring your knees back to the starting position without allowing the weights to slam down. Complete the desired number of reps, keeping a steady pace throughout.',
         substitutes: ['cable kickbacks']
     },
     fire_hydrants: {
@@ -1212,7 +1212,7 @@ export const EXERCISES = {
         },
         unit: 'reps', //vs duration    
         muscles: ['glutes'],
-        description: 'As if your weren\'t already a dog, hop down on all fours, with your hands underneath your pectorals. Now let your natural instincts take control, raising one leg out to the side as if to take care of business on the neighborhood firehydrant. Keep all other three points of contact station throughout this movement.',
+        description: 'Begin on all fours, with your hands directly beneath your shoulders and knees under your hips. Engage your core and keep your back flat. Keeping your knee bent at a 90-degree angle, lift one leg out to the side, aiming to bring it parallel to the floor. Pause briefly at the top of the movement. Lower your leg back to the starting position in a controlled motion, maintaining stability in your hips and torso. Complete all reps on one side before switching to the other leg.',
         substitutes: ['froggy pumps']
     },
     froggy_pumps: {
@@ -1224,7 +1224,7 @@ export const EXERCISES = {
         },
         unit: 'reps', //vs duration    
         muscles: ['glutes'],
-        description: 'Lying flat on your back, drag your feet back towards your bum until your knees are bent at a 90 degree angle. With your feet still firm on the ground and touching, drop your knees to either side of your body. Now that you are in position, push down through the outsides of your feet so your bum and lower back lift off the ground. Pause while elevated, and then lower back down.',
+        description: 'Lying flat on your back, drag your feet back towards your bum until your knees are bent at a 90 degree angle. With your feet still firm on the ground and touching, drop your knees to either side of your body. Now that you are in position, push down through the outsides of your feet so your bum and lower back lift off the ground. Pause while elevated, and then lower back down. Perform all reps on one side before switching to the other leg.',
         substitutes: ['cable kickbacks', 'fire hydrants']
     },
     bad_girls: {
@@ -1236,7 +1236,7 @@ export const EXERCISES = {
         },
         unit: 'reps', //vs duration    
         muscles: ['glutes'],
-        description: 'On the bad girls machine, or with a band around your knees while sitting on a chair, we reject conservatism by strengthening our abduction muscles, pushing our knees apart.',
+        description: 'To perform Bad Girls (Hip Adduction Machine), start by sitting on the machine with your back flat against the seat pad. Place your feet on the foot rests and your knees against the thigh pads. Grip the handles, engage your core, and maintain an upright posture. Squeeze your knees together to bring the thigh pads inward, focusing on engaging your inner thigh muscles. Hold briefly at the peak contraction, then slowly return to the starting position while controlling the movement. Repeat for the desired number of repetitions, ensuring a steady pace and proper form throughout.',
         substitutes: ['cable kickbacks']
     },
     seated_calf_raises: {
@@ -1639,7 +1639,7 @@ export const EXERCISES = {
         },
         unit: 'reps', //vs duration    
         muscles: ['abs'],
-        description: 'Sitting on your dump-truck booty with your legs bent at 90 degrees in front of your and your feet on the ground, lean back about 30 degrees and twist your torso and shoulders, touching the ground on either side of your bum with both hands, and then repeat, both hands to the other side.',
+        description: 'To perform Russian twists, sit on the floor with your knees bent and feet lifted slightly off the ground, balancing on your tailbone. Lean back slightly to engage your core, then clasp your hands together or hold a weight. Twist your torso to one side, bringing your hands or the weight beside your hip, then twist to the opposite side. Continue alternating sides, keeping your core engaged and maintaining balance throughout the exercise.',
         substitutes: ['jack_knives']
     },
     plank: {
@@ -1651,7 +1651,7 @@ export const EXERCISES = {
         },
         unit: 'reps', //vs duration    
         muscles: ['abs'],
-        description: 'Be the plank. Make sure your hips are tucked, your bum squeeze, your core tight, flat as a pancake.',
+        description: 'To perform a plank, start by positioning yourself face-down on the floor. Support your body on your forearms and toes, keeping your body in a straight line from head to heels. Engage your core, keep your back flat, and avoid letting your hips sag or rise. Hold this position, breathing steadily, for the desired duration.',
         substitutes: ['banana_hold, side_plank']
     },
     side_plank: {
@@ -1688,7 +1688,7 @@ export const EXERCISES = {
 
         unit: 'reps', //vs duration    
         muscles: ['abs'],
-        description: 'Did you see that deadly bird flying overhead? Quickly, play dead, lie flat on your back and point your arms and legs directly up towards the sky. Now slowly lower one arm and the opposite leg down to the ground, keeping a tucked and tight core. Then raise them up, and repeat on with the remaining opposite limbs.',
+        description: 'To perform dead bugs, lie on your back with your arms extended toward the ceiling and your knees bent at a 90-degree angle above your hips. Engage your core to flatten your lower back against the floor. Slowly lower your right arm and left leg toward the floor while keeping your back pressed down. Return to the starting position, then repeat on the opposite side by lowering your left arm and right leg. Continue alternating sides, moving in a controlled manner to maintain core stability.',
         substitutes: ['crunches', 'lying_leg_lifts']
     },
     lying_leg_lifts: {
@@ -1700,7 +1700,7 @@ export const EXERCISES = {
         },
         unit: 'reps', //vs duration    
         muscles: ['abs'],
-        description: 'Recline, relax, lie flat on your back, ready for a res... to raise your legs up to the sky and then back down to the ground. Legs straight, core tucked, if you can fit your hands under your lower back at any part of the movement then bend your knees a bit more.',
+        description: 'To perform lying leg lifts, start by lying flat on your back with your legs extended straight and your arms at your sides or placed under your glutes for support. Engage your core and press your lower back into the floor. Keeping your legs straight, lift them toward the ceiling until your body forms a 90-degree angle. Slowly lower your legs back down toward the floor without letting them touch the ground, maintaining tension in your core. Repeat the movement for the desired number of repetitions, ensuring controlled movements throughout to avoid strain on your back.',
         substitutes: ['jack_knives', 'hanging_knee_raises']
     },
     hanging_knee_raises: {
@@ -1712,7 +1712,7 @@ export const EXERCISES = {
         },
         unit: 'reps', //vs duration    
         muscles: ['abs'],
-        description: 'Like the monkey you are, hang from the bar, you hairy gorilla. Now raise your knees up, tuck your core, and hopefully you can touch your forehead to your knees. Release slowly down and try to reduce swinging momentum.',
+        description: 'To perform hanging knee raises, start by finding a sturdy pull-up bar or any overhead support. Grasp the bar with an overhand grip, positioning your hands shoulder-width apart. Allow your body to hang freely with your arms fully extended and your legs straight down. Engage your core and exhale as you bend your knees and lift them toward your chest, aiming to raise them as high as possible. Hold the position briefly at the top before slowly lowering your legs back to the starting position while inhaling. Repeat for the desired number of repetitions, focusing on controlled movements to engage your abdominal muscles effectively.',
         substitutes: ['lying_leg_lifts', 'v_crunches']
     },
     mountain_climbers: {
@@ -1736,7 +1736,7 @@ export const EXERCISES = {
         },
         unit: 'reps', //vs duration    
         muscles: ['abs'],
-        description: 'You have sinned and now you must beg for forgiveness. On your knees, hold the cable rope extension behind your head with both hands (ensure it is at it\'s maximum height). Crunch your face down and kiss the ground, then slowly release back up.',
+        description: 'To perform a kneeling cable crunch, start by attaching a rope handle to a high pulley on a cable machine. Kneel on the floor facing the machine, positioning the cable at the back of your head. Grip the rope with both hands, keeping your elbows bent and your hands near your forehead. Engage your core, and as you exhale, pull the rope down while curling your torso forward towards your knees. Ensure your hips stay stationary and focus on contracting your abdominal muscles. Hold the contraction briefly at the bottom of the movement, then slowly return to the starting position while inhaling. Repeat for the desired number of repetitions, maintaining control throughout the exercise.',
         substitutes: ['jack_knives', 'dead_bug']
     },
     bicycle_crunches: {
@@ -1760,7 +1760,7 @@ export const EXERCISES = {
         },
         unit: 'duration', //vs duration    
         muscles: ['abs'],
-        description: 'Lying flat on your back, pretend that your are a ripe and firm banana. Curve your whole body, crunching your core and lower back flat and firm down into the ground below you, and raise your pointed arms off the ground, pointing out behind your head, and your legs off the ground at a 30 degree angle. Shiver and quiver as your acknowledge your failing core muscles.',
+        description: 'To perform a banana hold, lie flat on your back with your arms extended overhead and your legs straight. Engage your core, then lift your arms, shoulders, and legs off the ground simultaneously, creating a curve in your body resembling a banana. Keep your arms and legs straight while squeezing your glutes and engaging your core to maintain stability. Hold this position for the desired duration, breathing steadily. Ensure that your lower back stays pressed into the ground, and avoid straining your neck by keeping your head in a neutral position. To finish, gently lower your arms and legs back to the ground.',
         substitutes: ['plank', 'leg_lifts']
     }
 }
