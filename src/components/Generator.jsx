@@ -52,6 +52,7 @@ export default function Generator({ workoutType, setWorkoutType, muscleGroup, se
 
   return (
     <SectionWrapper
+        id={'generate'}
         header={"generate your workout"}
         title={['Conquer', 'your', 'limits']}
     >

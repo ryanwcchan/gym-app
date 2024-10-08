@@ -12,7 +12,9 @@ export default function Hero() {
             you’re <span className="text-blue-400 font-medium">only 40%</span> into what your body’s
             <span className="text-blue-400 font-medium"> capable</span> of doing. That’s just the <span className="text-blue-400 font-medium"> limits </span> 
             that we put on ourselves.” <span className="font-semibold text-white-400 font-medium">David Goggins</span></p>
-        <Button text="START" />
+        <Button func={() => {
+          window.location.href = "#generate"
+        }} text="START" />
     </div>
   )
 }
