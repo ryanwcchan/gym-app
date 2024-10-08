@@ -2,25 +2,24 @@ import { EXERCISES, SCHEMES, TEMPOS, WORKOUTS } from "./workouts"
 const exercises = exercisesFlattener(EXERCISES)
 
 export function generateWorkout(args) {
-    const { muscles, poison: workout, goal } = args
+    const { muscleGroup, workoutType, goals } = args
     let exer = Object.keys(exercises);
     exer = exer.filter((key) => exercises[key].meta.environment !== "home");
     let includedTracker = [];
     let numSets = 5;
     let listOfMuscles;
 
-    if (workout === "individual") {
-        listOfMuscles = muscles;
+    if (workoutType === "individual") {
+        listOfMuscles = muscleGroup;
     } else {
-        listOfMuscles = WORKOUTS[workout][muscles[0]];
+        listOfMuscles = WORKOUTS[workoutType][muscleGroup[0]];
     }
 
     listOfMuscles = new Set(shuffleArray(listOfMuscles));
     let arrOfMuscles = Array.from(listOfMuscles);
-    let scheme = goal
+    let scheme = goals
     let sets = SCHEMES[scheme].ratio
         .reduce((acc, curr, index) => {
-            //make this compound and exercise muscle -> array of objects and destructure in loop
             return [
                 ...acc,
                 ...[...Array(parseInt(curr)).keys()].map((val) =>
@@ -72,7 +71,6 @@ export function generateWorkout(args) {
                 includedTracker.includes(curr) ||
                 !data[curr].muscles.includes(muscleGroup)
             ) {
-                // if (includedTracker.includes(curr)) { console.log('banana', curr) }
                 return acc;
             }
             return { ...acc, [curr]: exercises[curr] };
@@ -89,8 +87,6 @@ export function generateWorkout(args) {
             filteredOppList[
             Math.floor(Math.random() * filteredOppList.length)
             ];
-
-        // console.log(randomExercise)
 
         if (!randomExercise) {
             return {};
@@ -116,7 +112,6 @@ export function generateWorkout(args) {
                 repsOrDuraction = Math.floor(85 / tempoSum);
             }
         } else {
-            //set to nearest 5 seconds
             repsOrDuraction = Math.ceil(parseInt(repsOrDuraction) / 5) * 5;
         }
         includedTracker.push(randomExercise);

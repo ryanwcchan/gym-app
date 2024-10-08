@@ -15,7 +15,7 @@ function App() {
       return
     }
     let newWorkout = generateWorkout({ workoutType, muscleGroup, goals })
-    console.log("New Workout:" + newWorkout)
+    console.log("New Workout:" + JSON.stringify(newWorkout, null, 2))
     setWorkout(newWorkout)
   }
 
