@@ -1,8 +1,39 @@
-# React + Vite
+# Workout Generator App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Live Demo
+https://ryanwcchan.github.io/react-gym-app/
 
-Currently, two official plugins are available:
+## Features
+- Select workout type
+- Select muscle groups
+- Choose objective
+- Generate workout
+- Track sets using counter
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Technologies Used
+- React: Component-based UI development.
+- Tailwind CSS: For modern, responsive styling.
+- JavaScript: Logic and functionality implementation.
+- Vite: Fast development server and build tool.
+
+## Installation and setup
+
+### 1. Clone Repository
+  ```bash
+  git clone https://github.com/your-username/workout-generator.git
+  cd workout-generator
+  ```
+
+### 2. Install dependencies
+  ```bash
+  npm install
+  ```
+
+### 3. Start dev server
+  ```bash
+  npm run dev
+  ```
+
+### 4. Access the App
+  Open your browser and navigate to http://localhost:3000
+
