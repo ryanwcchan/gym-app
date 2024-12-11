@@ -1,4 +1,5 @@
 # Workout Generator App
+This App allows users to choose different workout splits and generate a workout.
 
 ## Live Demo
 https://ryanwcchan.github.io/react-gym-app/
